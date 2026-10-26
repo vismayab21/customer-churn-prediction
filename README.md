@@ -147,7 +147,7 @@ Each model is evaluated on the same held-out test set. The best model is selecte
 
 ```mermaid
 flowchart TD
-    A[" Load Customer Dataset"] --> B["🔎 Explore & Validate Data"]
+    A[" Load Customer Dataset"] --> B[" Explore & Validate Data"]
     B --> C[" Preprocess Features"]
     C --> D[" Stratified Train-Test Split"]
     D --> E[" SMOTE on Training Data"]
