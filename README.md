@@ -1,4 +1,4 @@
-# ⚡ Telco Customer Churn Prediction
+#  Telco Customer Churn Prediction
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:4338CA,100:06B6D4&height=200&section=header&text=CHURN%20PREDICTION&fontSize=38&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Machine%20Learning%20%7C%20Customer%20Analytics&descAlignY=60&descSize=16" width="100%" alt="Telco Customer Churn Prediction banner"/>
@@ -28,7 +28,7 @@
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 Customer churn is one of the biggest challenges in the telecommunications industry. Losing customers impacts revenue, increases acquisition costs, and makes long-term growth harder.
 
@@ -36,20 +36,20 @@ Customer churn is one of the biggest challenges in the telecommunications indust
 
 The project follows a complete machine learning workflow, from data exploration and preprocessing to model evaluation and saving the best-performing pipeline.
 
-> 🎯 **Goal:** Build a reproducible classification workflow that helps explore customer churn and supports data-driven retention strategies.
+>  **Goal:** Build a reproducible classification workflow that helps explore customer churn and supports data-driven retention strategies.
 
-## ✨ Features
+##  Features
 
-- 📊 **Exploratory Data Analysis** — Visualize churn patterns and customer behavior.
-- 🧹 **Data Preprocessing** — Handle missing values, encode categorical features, and scale numerical data.
-- ⚖️ **Class Imbalance Handling** — Apply SMOTE to the training data.
-- 🤖 **Multi-Model Training** — Train and compare eight classification algorithms.
-- 📈 **Model Evaluation** — Measure accuracy, precision, recall, F1-score, and ROC-AUC.
-- 🔍 **Visual Analytics** — Generate confusion matrices, ROC curves, and model comparison charts.
-- 💾 **Model Persistence** — Save the best fitted pipeline using Joblib.
-- 🔮 **Prediction Demo** — Generate a churn prediction and estimated churn probability for a sample customer.
+-  **Exploratory Data Analysis** — Visualize churn patterns and customer behavior.
+-  **Data Preprocessing** — Handle missing values, encode categorical features, and scale numerical data.
+-  **Class Imbalance Handling** — Apply SMOTE to the training data.
+-  **Multi-Model Training** — Train and compare eight classification algorithms.
+-  **Model Evaluation** — Measure accuracy, precision, recall, F1-score, and ROC-AUC.
+-  **Visual Analytics** — Generate confusion matrices, ROC curves, and model comparison charts.
+-  **Model Persistence** — Save the best fitted pipeline using Joblib.
+-  **Prediction Demo** — Generate a churn prediction and estimated churn probability for a sample customer.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Tools |
 |---|---|
@@ -61,7 +61,7 @@ The project follows a complete machine learning workflow, from data exploration 
 | Model persistence | Joblib |
 | Version control | Git, GitHub |
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```text
 telco-customer-churn-github/
@@ -93,7 +93,7 @@ telco-customer-churn-github/
 └── README.md
 ```
 
-## 📁 Dataset
+##  Dataset
 
 This project uses the **Telco Customer Churn** dataset, which contains customer information such as:
 
@@ -103,7 +103,7 @@ This project uses the **Telco Customer Churn** dataset, which contains customer 
 - Monthly charges and total charges
 - Customer churn status
 
-### 🎯 Target variable
+###  Target variable
 
 | Value | Meaning |
 |---|---|
@@ -126,7 +126,7 @@ data/WA_Fn-UseC_-Telco-Customer-Churn.csv
 
 See [`data/README.md`](data/README.md) for additional information.
 
-## 🤖 Models Implemented
+##  Models Implemented
 
 This project compares eight machine learning classifiers:
 
@@ -143,19 +143,19 @@ This project compares eight machine learning classifiers:
 
 Each model is evaluated on the same held-out test set. The best model is selected according to its **F1-score**.
 
-## ⚙️ Machine Learning Workflow
+##  Machine Learning Workflow
 
 ```mermaid
 flowchart TD
-    A["📂 Load Customer Dataset"] --> B["🔎 Explore & Validate Data"]
-    B --> C["🧹 Preprocess Features"]
-    C --> D["✂️ Stratified Train-Test Split"]
-    D --> E["⚖️ SMOTE on Training Data"]
-    E --> F["🤖 Train 8 Classifiers"]
-    F --> G["📊 Evaluate Model Performance"]
-    G --> H["🏆 Select Best F1-Score"]
-    H --> I["💾 Save Trained Pipeline"]
-    I --> J["🔮 Predict Customer Churn"]
+    A[" Load Customer Dataset"] --> B["🔎 Explore & Validate Data"]
+    B --> C[" Preprocess Features"]
+    C --> D[" Stratified Train-Test Split"]
+    D --> E[" SMOTE on Training Data"]
+    E --> F[" Train 8 Classifiers"]
+    F --> G[" Evaluate Model Performance"]
+    G --> H[" Select Best F1-Score"]
+    H --> I[" Save Trained Pipeline"]
+    I --> J[" Predict Customer Churn"]
 ```
 
 ### Preprocessing strategy
@@ -171,23 +171,23 @@ flowchart TD
 
 Keeping preprocessing and SMOTE inside the fitted pipeline helps prevent information from the held-out test set leaking into model training.
 
-## 📈 Results & Visualizations
+##  Results & Visualizations
 
 The project automatically generates visualizations and a metrics report when `run.py` finishes successfully.
 
-### 🔥 Model comparison
+###  Model comparison
 
 <p align="center">
   <img src="reports/figures/model_comparison_f1.png" alt="Model comparison by F1-score" width="90%"/>
 </p>
 
-### 📊 Churn distribution
+###  Churn distribution
 
 <p align="center">
   <img src="reports/figures/churn_distribution.png" alt="Customer churn distribution" width="75%"/>
 </p>
 
-### 📉 ROC curve comparison
+###  ROC curve comparison
 
 <p align="center">
   <img src="reports/figures/roc_curve_comparison.png" alt="ROC curves for the evaluated models" width="75%"/>
@@ -233,7 +233,7 @@ models/
 
 The confusion matrix files are generated separately for each evaluated model.
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -300,7 +300,7 @@ The program will:
 7. Save the fitted pipeline.
 8. Demonstrate a sample prediction.
 
-## 🔮 Using the Saved Model
+##  Using the Saved Model
 
 Once the pipeline has been trained, load it for predictions:
 
@@ -347,7 +347,7 @@ The sample uses illustrative customer values. The saved pipeline expects the ori
 
 The predicted probability is a model estimate, not a guarantee that a customer will churn.
 
-## 🧪 Key Learnings
+##  Key Learnings
 
 - End-to-end machine learning pipeline development
 - Exploratory data analysis and feature preparation
@@ -357,7 +357,7 @@ The predicted probability is a model estimate, not a guarantee that a customer w
 - Preventing preprocessing and resampling leakage
 - Saving and reusing fitted machine learning pipelines
 
-## 🔭 Future Improvements
+##  Future Improvements
 
 - [ ] Hyperparameter tuning with cross-validation
 - [ ] Explainable AI with SHAP
@@ -367,14 +367,14 @@ The predicted probability is a model estimate, not a guarantee that a customer w
 - [ ] Model monitoring and data drift detection
 - [ ] Business-focused churn retention analysis
 
-## ⚠️ Limitations
+##  Limitations
 
 - Performance depends on the dataset and its representativeness.
 - Test-set results do not guarantee performance on future customers.
 - F1-score may not fully capture the business cost of different errors.
 - The project is an offline machine learning workflow, not a deployed production service.
 
-## 👨‍💻 Author
+##  Author
 
 **Your Name**
 
@@ -389,16 +389,16 @@ The predicted probability is a model estimate, not a guarantee that a customer w
 
 Replace the placeholders with your profile details.
 
-## 📄 License
+##  License
 
 A license has not yet been specified. Add a `LICENSE` file before redistributing the source code. Ensure that the dataset's own terms are respected separately.
 
 ---
 
 <p align="center">
-  <b>Built with Python, machine learning, and curiosity. 💙</b>
+  <b>Built with Python, machine learning, and curiosity. </b>
   <br/>
-  If you find this project useful, consider giving the repository a ⭐
+  If you find this project useful, consider giving the repository a 
 </p>
 
 <p align="center">
