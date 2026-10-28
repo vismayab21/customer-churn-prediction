@@ -376,10 +376,10 @@ The predicted probability is a model estimate, not a guarantee that a customer w
 
 ##  Author
 
-**Your Name**
+**VISMAYA B**
 
 <p>
-  <a href="https://github.com/YOUR-VISMAYA">
+  <a href="https://github.com/YOUR-VISMAYA B">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"/>
   </a>
   <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-Vismaya B/">
